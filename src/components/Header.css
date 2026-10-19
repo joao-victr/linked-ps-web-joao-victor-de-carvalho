@@ -1,0 +1,27 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0 clamp(16px, 4vw, 56px);
+    background: var(--white);
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.logo {
+    font-size: 1.1rem;
+}
+
+.header ul {
+    display: flex;
+    gap: clamp(14px, 2.6vw, 36px);
+    font-size: .95rem;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
