@@ -1,0 +1,114 @@
+.contato {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.contato__top {
+    display: grid;
+    grid-template-columns: minmax(220px, 280px) 1fr;
+    gap: 48px;
+    max-width: 900px;
+    margin: 0 auto 48px;
+    text-align: left;
+}
+
+.contato__card {
+    font-style: normal;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 6px;
+    padding: 28px 18px;
+    display: grid;
+    gap: 10px;
+    font-size: .9rem;
+    align-content: start;
+}
+
+.contato__title {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+}
+
+.contato__card .indent {
+    padding-left: 18px;
+}
+
+.contato__card svg {
+    vertical-align: -2px;
+}
+
+.contato__map {
+    border: 1px solid #aebdbb;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 180px;
+    background: #e3ecef;
+}
+
+.contato__map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 180px;
+    border: 0;
+    display: block;
+}
+
+.contato__map-empty {
+    height: 100%;
+    min-height: 180px;
+    display: grid;
+    place-items: center;
+    color: var(--green-soft);
+}
+
+.form {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 14px 16px 18px;
+    border: 1px solid #b9c4c0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .85);
+    display: grid;
+    gap: 10px;
+    text-align: left;
+}
+
+.form__head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+}
+
+.form__head h3 {
+    font: 1.05rem var(--serif);
+    padding-right: 12px;
+    border-right: 1px solid #b9c4c0;
+}
+
+.form__head p {
+    font-size: .75rem;
+    color: var(--green-soft);
+}
+
+.form input {
+    height: 22px;
+    padding: 0 10px;
+    border: 0;
+    border-radius: 6px;
+    background: var(--green);
+    color: var(--white);
+    font: .72rem var(--serif);
+}
+
+.form input::placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.form__submit {
+    justify-self: center;
+    background: var(--white);
+    margin-top: 8px;
+}
