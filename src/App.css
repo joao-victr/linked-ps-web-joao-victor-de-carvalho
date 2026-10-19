@@ -1,0 +1,23 @@
+.section { position: relative; overflow: hidden; padding: 72px clamp(16px, 6vw, 96px); text-align: center; }
+.section--dark { background: var(--green); color: var(--white); }
+.section--light { background: var(--white); }
+.section h2 { font: clamp(2rem, 4vw, 2.6rem)/1.1 var(--serif-display); }
+.subtitle { font-size: .9rem; margin-top: 6px; }
+.section hr { width: 120px; border: 0; border-top: 1px solid currentColor; opacity: .4; margin: 10px auto 24px; }
+
+
+@media (max-width: 860px) {
+  .header ul { gap: 12px; font-size: .8rem; }
+  .hero { display: flex; flex-direction: column; }
+  .hero__photo { position: static; height: 280px; order: 2; }
+  .hero__panel { width: 100%; border-radius: 0 0 50% 50% / 0 0 30px 30px; }
+  .feedbacks { grid-template-columns: 1fr; }
+  .contato__top { grid-template-columns: 1fr; }
+  .horarios__card { flex-direction: column; }
+  .horarios__table { width: 100%; max-width: none; }
+  .footer { grid-template-columns: repeat(2, auto); }
+}
+@media (max-width: 520px) {
+  .logo { display: none; }
+  .header { justify-content: center; }
+}

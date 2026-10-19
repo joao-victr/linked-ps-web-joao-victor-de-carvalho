@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Inter:wght@400;500&display=swap");
+
+:root {
+  --green: #03423f;
+  --green-soft: #2f6f6b;
+  --blue: #c9dfe8;
+  --white: #fff;
+  --ink: #0e2b2a;
+  --serif-display: "DM Serif Text", Georgia, serif;
+  --serif: "Newsreader", Georgia, serif;
+  --sans: "Inter", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body { margin: 0; font-family: var(--serif); color: var(--ink); background: var(--white); line-height: 1.5; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; margin: 0; padding: 0; }
+h1, h2, h3, h4, p { margin: 0; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--green-soft); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+
+
+
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; font: 500 .85rem var(--sans); letter-spacing: .02em; cursor: pointer; border: 1px solid var(--green); }
+.btn .dot { width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid currentColor; }
+.btn--solid { background: var(--green); color: var(--white); }
+.btn--outline { background: transparent; color: var(--green); border-color: var(--green-soft); }
+.btn:hover { filter: brightness(1.12); }
