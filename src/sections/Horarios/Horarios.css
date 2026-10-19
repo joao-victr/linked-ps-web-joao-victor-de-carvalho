@@ -1,0 +1,52 @@
+.horarios__card {
+    max-width: 640px;
+    margin: 24px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 24px;
+    padding: 32px;
+    border: 2px solid #aebdbb;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .55);
+    backdrop-filter: blur(2px);
+}
+
+.horarios__clock {
+    width: 96px;
+    height: 96px;
+    color: var(--green);
+    flex: none;
+}
+
+.horarios__table {
+    margin: 0;
+    flex: 1;
+    max-width: 360px;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 14px 16px;
+    text-align: left;
+    font-size: .82rem;
+}
+
+.horarios__table div {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 8px 0;
+}
+
+.horarios__table div+div {
+    border-top: 1px solid rgba(255, 255, 255, .35);
+}
+
+.horarios__table dt,
+.horarios__table dd {
+    margin: 0;
+}
+
+.horarios__table dd {
+    font-weight: 600;
+}

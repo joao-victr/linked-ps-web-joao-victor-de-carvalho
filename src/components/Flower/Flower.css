@@ -1,0 +1,35 @@
+.flower {
+    position: absolute;
+    color: var(--blue);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.flower--left {
+    width: 380px;
+    left: -90px;
+    top: 20px;
+}
+
+.flower--right {
+    width: 340px;
+    right: -70px;
+    top: -70px;
+}
+
+.flower--bottom {
+    width: 420px;
+    right: -90px;
+    bottom: 40px;
+}
+
+.flower--left-low {
+    width: 360px;
+    left: -140px;
+    top: 120px;
+}
+
+.section>*:not(.flower) {
+    position: relative;
+    z-index: 1;
+}
