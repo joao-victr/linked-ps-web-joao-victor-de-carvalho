@@ -1,0 +1,44 @@
+.feedbacks {
+    display: grid;
+    grid-template-columns: 1fr minmax(240px, 420px);
+    gap: 48px;
+    align-items: center;
+    text-align: left;
+    padding-block: 56px;
+}
+
+.feedbacks hr {
+    margin-left: 0;
+    width: 100px;
+}
+
+.feedbacks ul {
+    display: grid;
+    gap: 26px;
+}
+
+.feedbacks li {
+    list-style: disc;
+    margin-left: 18px;
+    max-width: 460px;
+}
+
+.feedbacks blockquote {
+    margin: 0;
+    font-size: .95rem;
+}
+
+.feedbacks cite {
+    display: block;
+    margin: 12px 0 0 14px;
+    font-style: normal;
+    font-size: .85rem;
+}
+
+.feedbacks__img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #b9c4c0;
+}
