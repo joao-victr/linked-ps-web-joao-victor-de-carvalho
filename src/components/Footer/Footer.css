@@ -1,0 +1,31 @@
+.footer {
+    background: var(--green);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    gap: 40px clamp(24px, 5vw, 64px);
+    padding: 28px 24px 40px;
+    font-size: .9rem;
+}
+
+.footer h4 {
+    font: 600 .9rem var(--serif);
+    letter-spacing: .03em;
+    margin-bottom: 14px;
+}
+
+.footer ul {
+    display: grid;
+    gap: 8px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer__social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
