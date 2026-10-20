@@ -3,12 +3,21 @@
     grid-template-columns: 1fr minmax(240px, 420px);
     gap: 48px;
     align-items: center;
-    text-align: left;
     padding-block: 56px;
+}
+
+.feedbacks__text {
+    text-align: left;
+}
+
+.feedbacks__text h2, 
+.feedbacks__text .subtitle {
+    text-align: left;
 }
 
 .feedbacks hr {
     margin-left: 0;
+    margin-right: auto; 
     width: 100px;
 }
 
@@ -41,4 +50,13 @@
     object-fit: cover;
     border-radius: 12px;
     background: #b9c4c0;
+}
+
+@media (max-width: 860px) {
+    .feedbacks {
+        grid-template-columns: 1fr;
+    }
+    .feedbacks__text {
+        text-align: left; 
+    }
 }
